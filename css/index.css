@@ -1,0 +1,328 @@
+/* header */
+.sale,
+.fa-heart,
+.carousel .carousel-inner .carousel-item,
+.product-left {
+    position: relative;
+}
+.sale::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #F55150;
+    border-right: 10px solid transparent;
+    top: 2px;
+    right: 10px;
+}
+.sale {
+    width: 120px;
+}
+.sale::after{
+    content: "sale";
+    position: absolute;
+    background-color: #F55150;
+    width: 40px;
+    height: 20px;
+    top: -15px;
+    right: -8px;
+    text-align: center;
+    color: #fff;
+}
+
+.fa-heart::after{
+    content: "10";
+    position: absolute;
+    padding: 5px;
+    top: -10px;
+    right: -10px;
+    border-radius: 50px;
+    font-size: 7px;
+    color: #fff;
+    background-color: var(--hover-color);
+}
+/*Begin main */
+/* slider */
+.carousel .carousel-inner .title-carousel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 15%;
+    top: 20%;
+    color: #000;
+    text-shadow: 0 0 2px #2a2929;
+}
+.title-carousel h3 {
+    font-size: 52px;
+    font-weight: bold;
+}
+.title-carousel p {
+    font-size: 24px;
+    color: #000;
+    margin: 30px 0;
+}
+.title-carousel .btn {
+    width: 150px;
+    background-color: var(--hover-color);
+}
+/* section-box */
+.section-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.section-box .infor-box  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ccc;
+}
+
+.infor-box i {
+    font-size: 30px;
+}
+
+.section-box .infor-box h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+.infor-content {
+    margin-left: 20px;
+}
+
+.product-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 5%;
+    top: 10%;
+    color: #000;
+    text-shadow: 0 0 2px #2a2929;
+}
+.product-title .btn {
+    background-color: #000;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.product-title .btn {
+
+}
+.product-title h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.product-title p {
+    font-size: 14px; 
+}
+/* section- product-inter */
+.inter-item h2 {
+    font-weight: bold;
+}
+.inter-item-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inter-item-top li  {
+    padding: 2px 30px;
+    border-right: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.inter-item-top li:last-child{
+    border-right: 0;
+}
+.inter-item-top a:hover {
+    color: var(--hover-color);
+}
+/* img-card */
+
+.row-card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+.img-card {
+    width: 190px;
+    position: relative;
+    padding-bottom: 50px;
+}
+.img-card-new {
+    position: absolute;
+    top: 8px;
+    right: calc(100% - 95%);
+    /* background-image: radial-gradient(circle, #34b79d, #34b79d 66%, transparent 66%); */
+    clip-path: circle(50%);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.img-card .img-card-item h4{
+    font-size: 14px;
+    margin-top: 10px;
+}
+/* our bolg */
+.ourblog {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ourblog h2 {
+    font-weight: bold;
+}
+.ourblog-item {
+    padding: 0 20px;
+}
+.ourblog-item div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.ourblog-img {
+    position: relative;
+    width: 280px;
+    height: auto;
+    cursor: pointer;
+}
+.ourblog-img a {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.ourblog-img img {
+    width: 280px;
+    height: 200px;
+}
+.ourblog-desc {
+    position: absolute;
+    padding: 10px;
+    background-color: #fff;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+}
+.ourblog-desc p:first-child {
+    color: #ccc;
+}
+.ourblog-desc p:last-child {
+    color: #000;
+    font-weight: bold;
+}
+.ourblog-title {
+    width: 280px;
+}
+.ourblog-title small {
+    font-size: 10px;
+}
+.ourblog-title p {
+    margin-bottom: 15px;
+}
+.ourblog-title h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+/* Responsive */
+
+/* Tablet */
+@media screen and (max-width: 769px) {
+    .mtop {
+        margin: 0;
+    }
+    form .btn::after {
+        display: none;
+    }
+    .title-carousel h3 {
+        font-size: 1.5rem;
+    }
+    .title-carousel p {
+        font-size: 1.125rem;
+        margin: 0.313rem 0;
+    }
+    .navbar-collapse form {
+        justify-content: center;
+        margin-bottom: 0.938rem;
+    }
+    .carousel-control-prev-icon, 
+    .carousel-control-next-icon {
+        padding: 0;
+        font-size: 0.625rem;
+    }
+    .ourblog-img img,
+    .ourblog-title,
+    .ourblog-img{
+        width: 100%;
+    }
+    .section-box .infor-box {
+        border: none;
+        justify-content: flex-start;
+        margin-bottom:  0.625rem;
+    }
+    .product-left {
+        margin-bottom:  0.625rem;
+    }
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 426px) {
+    ol, ul {
+        padding-left: 0;
+    }
+    .product-title,
+    .carousel .carousel-inner .title-carousel {
+        top: 0.5rem;
+    }
+    .product-title h3,
+    .title-carousel h3 {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+    .product-title .btn,
+    .title-carousel .btn {
+        width: 100%;
+        font-size: 0.6rem;
+        margin-top: 0.3rem;
+    }
+    .ourblog-title,
+    .ourblog-img{
+        width: 100%;
+    }
+    .product-title p,
+    .title-carousel p {
+        font-size: 0.6rem;
+    }
+    .navbar-collapse form{
+        display: none !important;
+    }
+    .inter-item-top {
+        flex-direction: column;
+    }
+    .inter-item-top li {
+        border-right: none;
+        margin-bottom:  0.313rem;
+    }
+    .inter-item-top li a {
+        border-bottom: 0.063rem solid #ccc;
+    }
+    .social-list {
+        align-items: center;
+        justify-content: center;
+    }
+}
